@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+	--font-sans: 'Noto Sans', sans-serif;
+	--color-debug: var(--color-cyan-300);
+
+	--color-background: var(--color-neutral-50);
+	--color-text: var(--color-neutral-900);
+	--color-text-inverted: var(--color-background);
+
+	--color-textDark: var(--color-neutral-100);
+	--color-textDark-muted: var(--color-neutral-400);
+	--color-backgroundDark: var(--color-text);
+	--color-textDark-inverted: var(--color-backgroundDark);
+
+	--color-uiDark-background: var(--color-neutral-800);
+	--color-uiDark-background-muted: var(--color-neutral-950);
+	--color-uiDark-border: var(--color-textDark-muted);
+	--color-uiDark-label: var(--color-textDark-muted);
+	--color-uiDark-success: var(--color-green-400);
+	--color-uiDark-error: var(--color-red-400);
+	--color-uiDark-warning: var(--color-amber-400);
+	--color-uiDark-default: var(--color-uiDark-label);
+
+	--color-buttonDark-text: var(--color-uiDark-border);
+	--color-buttonDark-text-hover: var(--color-neutral-200);
+	--color-buttonDark-border: var(--color-buttonDark-text);
+	--color-buttonDark-border-hover: var(--color-button-text-hover);
+}
+
+@layer base {
+	/* TODO: Remove on prod */
+	body {
+		@apply bg-background text-text;
+		@apply dark:bg-backgroundDark dark:text-textDark-muted;
+	}
+
+	#root {
+		/* @apply **:border-[0.1px] **:border-debug; */
+		@apply h-screen w-screen;
+		@apply grid grid-cols-[auto_1fr];
+
+		aside {
+			@apply w-16;
+		}
+		main {
+			@apply dark:bg-uiDark-background;
+		}
+	}
+}
+
+@layer utilities {
+	.label-uppercase {
+		@apply text-sm tracking-tight uppercase;
+	}
+	.label-capitalize,
+	.helper-text {
+		@apply text-sm tracking-tight capitalize;
+	}
+}
