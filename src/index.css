@@ -17,13 +17,22 @@
 	--color-textDark-inverted: var(--color-backgroundDark);
 
 	--color-uiDark-background: var(--color-neutral-800);
-	--color-uiDark-background-muted: var(--color-neutral-950);
+	--color-uiDark-background-muted: var(--color-neutral-900);
+	--color-uiDark-background-hover: var(--color-neutral-600);
 	--color-uiDark-border: var(--color-textDark-muted);
 	--color-uiDark-label: var(--color-textDark-muted);
+	--color-uiDark-label-hover: var(--color-textDark);
 	--color-uiDark-success: var(--color-green-400);
 	--color-uiDark-error: var(--color-red-400);
 	--color-uiDark-warning: var(--color-amber-400);
 	--color-uiDark-default: var(--color-uiDark-label);
+
+	--color-dropdownDark-background: var(--color-uiDark-background-muted);
+	--color-dropdownDark-label: var(--color-textDark-muted);
+	--color-dropdownDark-label-hover: var(--color-uiDark-label-hover);
+	--color-dropdownDark-label-background-hover: var(
+		--color-uiDark-background-hover
+	);
 
 	--color-buttonDark-text: var(--color-uiDark-border);
 	--color-buttonDark-text-hover: var(--color-neutral-200);

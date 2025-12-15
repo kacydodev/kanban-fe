@@ -15,7 +15,8 @@ export function Button({
 }: ButtonProps) {
 	const buttonClassName = classNames(
 		[
-			'p-2 rounded',
+			'p-2 rounded cursor-pointer',
+			'[&_svg]:inline-block',
 			'label-uppercase',
 
 			variant === 'outline' &&
