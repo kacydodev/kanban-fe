@@ -4,8 +4,8 @@ import { Main } from './components/Main';
 
 export function App() {
 	useEffect(() => {
-		document.documentElement.setAttribute('class', 'dark');
-		// document.documentElement.setAttribute('class', 'light');
+		document.documentElement.setAttribute('data-theme', 'dark');
+		// document.documentElement.setAttribute('class', 'dark');
 	}, []);
 
 	return (
