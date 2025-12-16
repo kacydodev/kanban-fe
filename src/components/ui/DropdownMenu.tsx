@@ -11,29 +11,29 @@ export function DropdownMenu() {
 				Options <CaretRightIcon weight='bold' size={18} />
 			</Button>
 			<Popover>
-				<Menu className='w-42 rounded shadow-lg bg-uiDark-background-muted'>
+				<Menu className='w-42 rounded shadow-lg dark:bg-uiDark-background-muted'>
 					<MenuItem
-						className='p-2 hover:bg-dropdownDark-label-background-hover hover:text-dropdownDark-label-hover cursor-pointer'
+						className='p-2 dark:hover:bg-dropdownDark-label-background-hover dark:hover:text-dropdownDark-label-hover cursor-pointer'
 						onAction={() => alert('open')}>
 						Open
 					</MenuItem>
 					<MenuItem
-						className='p-2 hover:bg-dropdownDark-label-background-hover hover:text-dropdownDark-label-hover cursor-pointer'
+						className='p-2 dark:hover:bg-dropdownDark-label-background-hover dark:hover:text-dropdownDark-label-hover cursor-pointer'
 						onAction={() => alert('rename')}>
 						Rename…
 					</MenuItem>
 					<MenuItem
-						className='p-2 hover:bg-dropdownDark-label-background-hover hover:text-dropdownDark-label-hover cursor-pointer'
+						className='p-2 dark:hover:bg-dropdownDark-label-background-hover dark:hover:text-dropdownDark-label-hover cursor-pointer'
 						onAction={() => alert('duplicate')}>
 						Duplicate
 					</MenuItem>
 					<MenuItem
-						className='p-2 hover:bg-dropdownDark-label-background-hover hover:text-dropdownDark-label-hover cursor-pointer'
+						className='p-2 dark:hover:bg-dropdownDark-label-background-hover dark:hover:text-dropdownDark-label-hover cursor-pointer'
 						onAction={() => alert('share')}>
 						Share…
 					</MenuItem>
 					<MenuItem
-						className='p-2 hover:bg-dropdownDark-label-background-hover hover:text-dropdownDark-label-hover cursor-pointer'
+						className='p-2 dark:hover:bg-dropdownDark-label-background-hover dark:hover:text-dropdownDark-label-hover cursor-pointer'
 						onAction={() => alert('delete')}>
 						Delete…
 					</MenuItem>

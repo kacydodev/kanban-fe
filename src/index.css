@@ -5,16 +5,25 @@
 
 @theme {
 	--font-sans: 'Noto Sans', sans-serif;
-	--color-debug: var(--color-cyan-300);
 
+	--color-debug: var(--color-cyan-300);
 	--color-background: var(--color-neutral-50);
+	--color-backgroundDark: var(--color-text);
+
 	--color-text: var(--color-neutral-900);
+	--color-text-muted: var();
 	--color-text-inverted: var(--color-background);
 
 	--color-textDark: var(--color-neutral-100);
 	--color-textDark-muted: var(--color-neutral-400);
-	--color-backgroundDark: var(--color-text);
 	--color-textDark-inverted: var(--color-backgroundDark);
+
+	--color-ui-background: var();
+	--color-ui-background-muted: var();
+	--color-ui-background-hover: var();
+	--color-ui-border: var();
+	--color-ui-label: var();
+	--color-ui-label-hover: var();
 
 	--color-uiDark-background: var(--color-neutral-800);
 	--color-uiDark-background-muted: var(--color-neutral-900);
@@ -22,10 +31,22 @@
 	--color-uiDark-border: var(--color-textDark-muted);
 	--color-uiDark-label: var(--color-textDark-muted);
 	--color-uiDark-label-hover: var(--color-textDark);
+
+	/* TODO: split into label & background */
+	--color-ui-success: var();
+	--color-ui-error: var();
+	--color-ui-warning: var();
+	--color-ui-default: var();
+
 	--color-uiDark-success: var(--color-green-400);
-	--color-uiDark-error: var(--color-red-400);
+	--color-uiDark-danger: var(--color-red-400);
 	--color-uiDark-warning: var(--color-amber-400);
-	--color-uiDark-default: var(--color-uiDark-label);
+	--color-uiDark-default: var(--color-neutral-400);
+
+	--color-dropdown-background: var();
+	--color-dropdown-label: var();
+	--color-dropdown-label-hover: var();
+	--color-dropdown-label-background-hover: var();
 
 	--color-dropdownDark-background: var(--color-uiDark-background-muted);
 	--color-dropdownDark-label: var(--color-textDark-muted);
@@ -34,10 +55,22 @@
 		--color-uiDark-background-hover
 	);
 
+	--color-button-text: var();
+	--color-button-text-hover: var();
+	--color-button-border: var();
+	--color-button-border-hover: var();
+	--color-button-background: var();
+	--color-button-background-hover: var();
+
 	--color-buttonDark-text: var(--color-uiDark-border);
 	--color-buttonDark-text-hover: var(--color-neutral-200);
 	--color-buttonDark-border: var(--color-buttonDark-text);
 	--color-buttonDark-border-hover: var(--color-button-text-hover);
+	--color-button-backgroundDark: var();
+	--color-button-backgroundDark-hover: var();
+
+	/* TODO: --color-buttonDanger-text: var(); */
+	/* TODO: --color-buttonWarning-text: var(); */
 }
 
 @layer base {
@@ -48,7 +81,7 @@
 	}
 
 	#root {
-		/* @apply **:border-[0.1px] **:border-debug; */
+		@apply **:border-[0.1px] **:border-debug;
 		@apply h-screen w-screen;
 		@apply grid grid-cols-[auto_1fr];
 

@@ -12,7 +12,7 @@ export function HelperText({
 }: HelperText) {
 	const variantClassname = {
 		success: 'dark:text-uiDark-success',
-		error: 'dark:text-uiDark-error',
+		error: 'dark:text-uiDark-danger',
 		warning: 'dark:text-uiDark-warning',
 	};
 
