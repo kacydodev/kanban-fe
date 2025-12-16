@@ -4,7 +4,7 @@ import { TestPage } from './components/pages/TestPage';
 
 export function App() {
 	useEffect(() => {
-		// document.documentElement.setAttribute('data-theme', 'dark');
+		document.documentElement.setAttribute('data-theme', 'dark');
 		// document.documentElement.setAttribute('class', 'dark');
 	}, []);
 

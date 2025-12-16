@@ -81,7 +81,7 @@
 	}
 
 	#root {
-		@apply **:border-[0.1px] **:border-debug;
+		/* @apply **:border-[0.1px] **:border-debug; */
 		@apply h-screen w-screen;
 		@apply grid grid-cols-[auto_1fr];
 
