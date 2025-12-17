@@ -11,19 +11,20 @@
 	--color-backgroundDark: var(--color-text);
 
 	--color-text: var(--color-neutral-900);
-	--color-text-muted: var();
+	--color-text-muted: var(--color-neutral-700);
 	--color-text-inverted: var(--color-background);
 
 	--color-textDark: var(--color-neutral-100);
 	--color-textDark-muted: var(--color-neutral-400);
 	--color-textDark-inverted: var(--color-backgroundDark);
 
-	--color-ui-background: var();
-	--color-ui-background-muted: var();
-	--color-ui-background-hover: var();
-	--color-ui-border: var();
-	--color-ui-label: var();
-	--color-ui-label-hover: var();
+	--color-ui-background: var(--color-neutral-300);
+	--color-ui-background-muted: var(--color-neutral-200);
+	--color-ui-background-hover: var(--color-neutral-400);
+	--color-ui-border: var(--color-text-muted);
+	--color-ui-label: var(--color-text-muted);
+	--color-ui-label-hover: var(--color-text);
+	--color-ui-label-active: var(--color-text-inverted);
 
 	--color-uiDark-background: var(--color-neutral-800);
 	--color-uiDark-background-muted: var(--color-neutral-900);
@@ -42,6 +43,15 @@
 	--color-uiDark-danger: var(--color-red-400);
 	--color-uiDark-warning: var(--color-amber-400);
 	--color-uiDark-default: var(--color-neutral-400);
+
+	--color-sidebar-background: var(--color-ui-background-muted);
+	--color-sidebar-background-hover: var(--color-ui-background-hover);
+	--color-sidebar-background-active: var(--color-ui-background-hover);
+	--color-sidebar-label: var(--color-ui-label);
+	--color-sidebar-label-hover: var(--color-ui-label-hover);
+	--color-sidebar-label-active: var(--color-ui-label-active);
+
+	/* TODO: --color-sidebarDark-background: var(); */
 
 	--color-dropdown-background: var();
 	--color-dropdown-label: var();
@@ -86,11 +96,12 @@
 		@apply grid grid-cols-[auto_1fr];
 
 		aside {
-			@apply w-16;
+			/* @apply w-16; */
+			@apply w-72;
 		}
-		main {
+		/* main {
 			@apply dark:bg-uiDark-background;
-		}
+		} */
 	}
 }
 
