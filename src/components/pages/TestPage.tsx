@@ -1,11 +1,11 @@
-import { Aside } from '../Aside';
-import { Main } from '../Main';
+import { Outlet } from 'react-router';
+import { Sidebar } from '../Sidebar';
 
 export function TestPage() {
 	return (
 		<>
-			<Aside />
-			<Main />
+			<Sidebar />
+			<Outlet />
 		</>
 	);
 }
